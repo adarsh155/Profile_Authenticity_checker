@@ -1,0 +1,29 @@
+{
+  "model": "models/logistic_model.pkl",
+  "model_version": "1.0.0",
+  "model_type": "logistic_regression",
+  "thresholds": {
+    "likely_fabricated": 0.42,
+    "borderline": 0.52
+  },
+  "vectorizers": {
+    "headline_vectorizer": "vectorizer/headline_vectorizer.pkl",
+    "bio_vectorizer": "vectorizer/bio_vectorizer.pkl",
+    "feature_columns": "vectorizer/feature_columns.json"
+  },
+  "regex_blacklist_patterns": [
+    "^[a-z]{3,}\\s[a-z]{3,}\\s[a-z]{3,}$",
+    "^[a-z]{3,}\\s[a-z]{3,}$",
+    "^[a-z]{4,}$",
+    "^[a-z]{3,}\\s[a-z]{3,}\\s[a-z]{3,}$",
+    "^[a-z]{4,}\\s[a-z]{4,}$",
+    "^[a-z]{5,}$"
+  ],
+  "buzzword_file": "/content/buzzwordlist.json",
+  "reason_templates": {
+    "regex_match": "Contains overused resume phrases or gibberish",
+    "buzzword_density": "Overused language and low originality",
+    "low_readability": "Low readability suggests AI-generated or exaggerated content",
+    "gibberish": "Detected gibberish or nonsensical input"
+  }
+}
