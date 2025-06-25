@@ -94,8 +94,8 @@ uvicorn app.main:app --reload --port 9000
 
 4️⃣ **Access API Docs:**
 
-- Interactive Swagger UI: [http://127.0.0.1:9000/docs](http://127.0.0.1:9000/docs)
-- Redoc: [http://127.0.0.1:9000/redoc](http://127.0.0.1:9000/redoc)
+- Interactive Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
 ---
 
